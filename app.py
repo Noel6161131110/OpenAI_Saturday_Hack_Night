@@ -42,7 +42,7 @@ def main():
 def success():  
     if request.method == 'POST':  
         f = request.files['file']
-        f.save(f.filename) 
+        f.save(f.filename)
         doc_text = convertImage(f.filename)
         user_choice = request.form['options']
         res_doc = response_Summary(document_Text=doc_text,user_choice = user_choice)
