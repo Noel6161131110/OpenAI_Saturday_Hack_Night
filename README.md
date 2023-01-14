@@ -15,11 +15,17 @@ toVzd3yMR7AVYxs1Nsgg
 ## Link to product walkthrough
 [link to video]
 ## How it Works ?
-1. Explaining the working of project
+Using DaVinci 002 API of the GPT-3 model, we summarize articles of about 4000 tokens.  
+We use Flask web framework with HTML to create a website to implement this.  
+The user can choose from creative to very objective and the summary generated is based on that choice; these are obtained by tweaking the temperature and max _tokens values.
 2. Embed video of project demo
 ## Libraries used
-Library Name - Version
+- Python - 3.10.8
+- Flask - 2.2.2
+- Flask Sql-Alchemy -  3.0.2
+- Set up envirnoment / Or activate environment  
+- Open AI - GPT-3
 ## How to configure
-Instructions for setting up project
+As our project is on a website u need not configure anything to run it. 
 ## How to Run
-Instructions for running
+You can check out our website at [Rizz.ai](link)
