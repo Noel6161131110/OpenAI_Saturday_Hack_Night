@@ -6,13 +6,15 @@ Home
 
 <div class="container my-3">
     <h2>Summarize Document</h2>
+    <br>
     <form action="/" method="POST">
         <div class="mb-3">
             <label for="title" class="form-label">Enter your document</label>
-            <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp">
+            <!-- <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp"> -->
+            <textarea  class="form-control" name="title" id="title">
+            </textarea>             
 
         </div>
-
         <div style="padding-top:20px;">
             <input type="radio" name="options" id="option1" value="Defined"> Defined </input>
         </div>
@@ -22,29 +24,54 @@ Home
         <div style="padding-top:20px; padding-bottom:20px;">
             <input type="radio" name="options" id="option3" value="Creative"> Creative </input>
         </div>
-        <button type="submit" class="btn btn-primary">Generate Summary</button>
+        <button type="submit" class="btn btn-outline-dark btn-sm mx-1">Generate Summary</button>
     </form>
+
+    <div style="padding-top:30px;">
+        <label for="title" class="form-label"><h4><b><i>-OR-</i></b></h4></label>
+    </div>
+
+    <div style="padding-top:30px;">
+        <form action = "/success" method = "post" enctype="multipart/form-data">  
+            <div>
+                <input type ="file" name="file" />  
+                
+            </div>
+
+            <div style="padding-top:20px;">
+                <input type="radio" name="options" id="option1" value="Defined"> Defined </input>
+            </div>
+            <div style="padding-top:20px;">
+                <input type="radio" name="options" id="option2" value="Neutral"> Neutral </input>
+            </div>  
+            <div style="padding-top:20px; padding-bottom:20px;">
+                <input type="radio" name="options" id="option3" value="Creative"> Creative </input>
+            </div>
+            <button type="submit" class="btn btn-outline-dark btn-sm mx-1">Generate Summary</button>
+        </form>  
+    </div>
 </div>
 
 <div style="padding-top:50px;">
     
 </div>
 <div class="container my-3">
-    <h3>Summary</h3>
+    <h3><b>Summary</b></h3>
 
     {% for summary in allLog%}
     <p>
         <!-- {{loop.index}} -->
 
     <div>
-        {{loop.index}}
+        <h5>Document</h5>
         <div>
             {{summary.res_document}}
         </div>
     </div>
     </p>
-
+    <br>
     <p>
+    <h5>Summarized</h5>
     <div>
         {{summary.summa_document}}
     </div>

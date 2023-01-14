@@ -1,4 +1,3 @@
-import os
 import openai
 
 #openai.api_key = os.getenv('API_KEY') #Setting GPT-3 API-KEY (text-davinci-002)
@@ -11,13 +10,13 @@ def response_Summary(document_Text,user_choice = "Neutral"):
 
     if user_choice == "Neutral":
         max_words = 80
-        temp_set = 0.2
+        temp_set = 0.3
     elif user_choice == "Defined":
         max_words = 50
-        temp_set = 0.5
+        temp_set = 0.6
     elif user_choice == "Creative":
-        max_words = 220
-        temp_set = 0.8
+        max_words = 330
+        temp_set = 0.9
 
 
     if len(document_Text) > 100:

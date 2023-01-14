@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 from summarizerAI import response_Summary
-
+from convImgTotxt import convertImage
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///summary.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -38,6 +38,23 @@ def main():
     allLog = SummaryDoc.query.all()
     return render_template('index.html', allLog = allLog)
 
+@app.route('/success', methods = ['POST'])  
+def success():  
+    if request.method == 'POST':  
+        f = request.files['file']
+        f.save(f.filename) 
+        doc_text = convertImage(f.filename)
+        user_choice = request.form['options']
+        res_doc = response_Summary(document_Text=doc_text,user_choice = user_choice)
 
+        summaryDel = SummaryDoc.query.first()
+        db.session.delete(summaryDel)
+        db.session.commit()
+
+        summary = SummaryDoc(res_document = doc_text , summa_document = res_doc)
+        db.session.add(summary)
+        db.session.commit()
+
+    return redirect("/")
 if __name__ == "__main__":
     app.run(debug=True, port = 8000)
