@@ -28,4 +28,4 @@ The user can choose from creative to very objective and the summary generated is
 ## How to configure
 As our project is on a website u need not configure anything to run it. 
 ## How to Run
-You can check out our website at [Rizz.ai](link)
+You can check out our project at [Rizz.ai](link)
