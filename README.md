@@ -8,7 +8,7 @@ The input can be text or in pdf format.
 It is implemented as a website.  
 ## Team members
 1. [Noel Paul George](https://github.com/Noel6161131110)
-2. [Rohan Mano](Embed perosnal github URL)
+2. [Rohan Mano](https://github.com/CyB3RTYp3)
 3. [Reo George](https://github.com/reogeorge)
 ## Team Id
 toVzd3yMR7AVYxs1Nsgg
