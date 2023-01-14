@@ -7,7 +7,7 @@ It can be used to summarize text and pick out the important bits in an article.
 The input can be text or in pdf format.
 It is implemented as a website
 ## Team members
-1. [Noel Paul George] (https://github.com/Noel6161131110)
+1. [Noel Paul George](https://github.com/Noel6161131110)
 2. [Rohan Mano](Embed perosnal github URL)
 3. [Reo George](https://github.com/reogeorge)
 ## Team Id
