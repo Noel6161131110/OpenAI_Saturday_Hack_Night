@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock title %}
+{% block body %}
+
+<div class="container my-3">
+    <h2>Summarize Document</h2>
+    <form action="/" method="POST">
+        <div class="mb-3">
+            <label for="title" class="form-label">Enter your document</label>
+            <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp">
+
+        </div>
+
+        <div style="padding-top:20px;">
+            <input type="radio" name="options" id="option1" value="Defined"> Defined </input>
+        </div>
+        <div style="padding-top:20px;">
+            <input type="radio" name="options" id="option2" value="Neutral"> Neutral </input>
+        </div>  
+        <div style="padding-top:20px; padding-bottom:20px;">
+            <input type="radio" name="options" id="option3" value="Creative"> Creative </input>
+        </div>
+        <button type="submit" class="btn btn-primary">Generate Summary</button>
+    </form>
+</div>
+
+<div style="padding-top:50px;">
+    
+</div>
+<div class="container my-3">
+    <h3>Summary</h3>
+
+    {% for summary in allLog%}
+    <p>
+        <!-- {{loop.index}} -->
+
+    <div>
+        {{loop.index}}
+        <div>
+            {{summary.res_document}}
+        </div>
+    </div>
+    </p>
+
+    <p>
+    <div>
+        {{summary.summa_document}}
+    </div>
+    </p>
+    {% endfor %}
+</div>
+
+
+{% endblock body %}
