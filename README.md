@@ -2,7 +2,7 @@
 
 
 # Rizz.ai
-Rizz.ai is an application using openai api to transform articles or large blocks of text into small chunks.  
+Rizz.ai is an application using Open AI api to transform articles or large blocks of text into small chunks.  
 It can be used to summarize text and pick out the important bits in an article.  
 The input can be text or in pdf format.  
 It is implemented as a website.  
