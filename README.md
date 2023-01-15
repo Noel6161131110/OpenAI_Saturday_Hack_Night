@@ -14,7 +14,7 @@ It is implemented as a website.
 toVzd3yMR7AVYxs1Nsgg
 ## Link to product walkthrough
 
-<a href="https://www.youtube.com/watch?v=cbzObD3_JeA" target="_blank"><img src="https://github.com/Noel6161131110/OpenAI_Saturday_Hack_Night/blob/main/Youtube_logo_PNG7.png" width="300" height="150" ></a>
+<a href="https://www.youtube.com/watch?v=cbzObD3_JeA" target="_blank" ><img src="https://github.com/Noel6161131110/OpenAI_Saturday_Hack_Night/blob/main/Youtube_logo_PNG7.png" width="300" height="150" ></a>
 ## How it Works ?
 Using DaVinci 002 API of the GPT-3 model, we summarize articles of about 4000 tokens.  
 We use Flask web framework with HTML to create a website to implement this.  
