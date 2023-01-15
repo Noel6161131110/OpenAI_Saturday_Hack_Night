@@ -13,12 +13,12 @@ It is implemented as a website.
 ## Team Id
 toVzd3yMR7AVYxs1Nsgg
 ## Link to product walkthrough
-[link to video]
+[https://youtu.be/cbzObD3_JeA]
 ## How it Works ?
 Using DaVinci 002 API of the GPT-3 model, we summarize articles of about 4000 tokens.  
 We use Flask web framework with HTML to create a website to implement this.  
 The user can choose from creative to very objective and the summary generated is based on that choice; these are obtained by tweaking the temperature and max _tokens values.
-2. Video Walkthrough of RIZZ AI - (https://youtu.be/cbzObD3_JeA)
+
 ## Libraries used
 - Python - 3.10.8
 - Flask - 2.2.2
