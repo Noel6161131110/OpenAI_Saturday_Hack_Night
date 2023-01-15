@@ -23,9 +23,10 @@ The user can choose from creative to very objective and the summary generated is
 - Python - 3.10.8
 - Flask - 2.2.2
 - Flask Sql-Alchemy -  3.0.2
-- Set up envirnoment / Or activate environment  
+- Virtualenv  
 - Open AI - GPT-3
+- Ocrspace
 ## How to configure
 As our project is on a website u need not configure anything to run it. 
-## How to Run
-You can check out our project at [Rizz.ai](link)
+<!-- ## How to Run
+You can check out our project at [Rizz.ai](link) -->
