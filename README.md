@@ -27,6 +27,9 @@ The user can choose from creative to very objective and the summary generated is
 - Open AI - GPT-3
 - Ocrspace
 ## How to configure
-As our project is on a website u need not configure anything to run it. 
+- Set up virtual environment.
+- Install the mentioned libraries.
+- Create a API Key from Open AI ,by creating an account.
+
 <!-- ## How to Run
 You can check out our project at [Rizz.ai](link) -->
