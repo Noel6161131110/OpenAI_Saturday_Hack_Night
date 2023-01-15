@@ -13,7 +13,8 @@ It is implemented as a website.
 ## Team Id
 toVzd3yMR7AVYxs1Nsgg
 ## Link to product walkthrough
-![](https://github.com/Noel6161131110/OpenAI_Saturday_Hack_Night/blob/main/Youtube_logo_PNG7.png | width=100)
+
+<img src="[https://your-image-url.type](https://github.com/Noel6161131110/OpenAI_Saturday_Hack_Night/blob/main/Youtube_logo_PNG7.png)" width="100" height="100">
 ## How it Works ?
 Using DaVinci 002 API of the GPT-3 model, we summarize articles of about 4000 tokens.  
 We use Flask web framework with HTML to create a website to implement this.  
